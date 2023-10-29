@@ -1,0 +1,122 @@
+/* Reset some default styles for consistency */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Registration box styles */
+.registration-box {
+    background-color: #fff;
+    border: -2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 91px;
+    max-width: 533px;
+}
+
+.logo {
+    text-align: center;
+    color: #007BFF;
+    font-size: 33px;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+.input-container input::placeholder {
+    color: #aaa;
+}
+
+/* Button styles */
+.create-account {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+}
+
+/* Login link styles */
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .registration-box {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-container {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .input-container input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .create-account {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .login-link {
+        margin-top: 15px;
+    }
+}
+
+        /* Validation for Date of Birth (DOB)
+        var dob = $('#signup-dob').val();
+        var dobRegex = /^([0-9]{2})-([0-9]{2})-([0-9]{4})$/i;
+
+
+
+        if (!dobRegex.test(dob)) {
+            console.log('DOB:', dob); // Add this line for debugging
+            $('#dob-error').text('Invalid date of birth format. Use dd-mm-yyyy format.');
+            return;
+        }
+*/
